@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bd0e8b48573944f8a25ff9289657f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 80
+  rotationSpeed: 150
 --- !u!4 &622582489
 Transform:
   m_ObjectHideFlags: 0
@@ -744,9 +744,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e26f4a55b385c4f88fed65e814fa5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4250071352393114519, guid: f2df2fa77d452d74284e23af3fe5680b, type: 3}
+  enemyPrefab:
+  - {fileID: 4250071352393114519, guid: f2df2fa77d452d74284e23af3fe5680b, type: 3}
+  - {fileID: 4250071352393114519, guid: 477c6fc3833b6684abfb9c0b3b61d3fa, type: 3}
+  - {fileID: 4250071352393114519, guid: 017928dba03504144a2fe0733d4d4557, type: 3}
   powerUp: {fileID: 6028539858046313494, guid: 1cf79ac5fa0ad0048bd3b11c053e5565, type: 3}
-  enemyCount: 0
+  enemyCount: 4
 --- !u!4 &1995622530
 Transform:
   m_ObjectHideFlags: 0
