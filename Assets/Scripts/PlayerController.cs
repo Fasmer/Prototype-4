@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     private GameObject focalPoint;
     public GameObject powerUpIndicator;
+    [SerializeField] TextMeshPro playerName;
     public bool hasPowerUp = false;
 
     // Start is called before the first frame update
@@ -16,6 +18,7 @@ public class PlayerController : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("Focal Point");
+        playerName.text = MainManager.Instance.PlayerName;
     }
 
     // Update is called once per frame
